@@ -5,6 +5,12 @@ ion-card {
     max-width: 400px;
     border-radius: 10px;
   }
+
+ion-content{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
   
 ion-card-title {
     --color: #000;
@@ -14,8 +20,20 @@ ion-card-subtitle {
     --color: #000;
   }
 
-ion-button{
-    --color: #000;
-    --fill: #000; 
+.button-container {
+    display: flex;        // Enable flex layout
+    justify-content: center; // Center horizontally
+    margin-top: 10px;     // Add space from content
+}
+
+ion-button {
+    --color: white;      // Button icon and text color
+    --background: #000;  // Default button background
+}
+
+.card-button{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
 }
 
