@@ -1,6 +1,9 @@
 ion-card {
     --background: #FA9512;
     --color: #000;
+    margin-bottom: 10%;
+    max-width: 400px;
+    border-radius: 10px;
   }
   
 ion-card-title {
@@ -15,3 +18,4 @@ ion-button{
     --color: #000;
     --fill: #000; 
 }
+
