@@ -6,26 +6,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png"/>
+<ion-content class="centered-content">
+  <!-- Display the current recipe -->
+  <ion-card *ngIf="recipes.length > 0">
+    <img [src]="recipes[currentRecipeIndex].img" alt="Recipe image"/>
     <ion-card-header>
-      <ion-card-title>Recipe Name</ion-card-title>
-      <ion-card-subtitle>Time taken: 30min</ion-card-subtitle>
+      <ion-card-title>{{ recipes[currentRecipeIndex].name }}</ion-card-title>
+      <ion-card-subtitle>{{ recipes[currentRecipeIndex].subtitle }}</ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
+      {{ recipes[currentRecipeIndex].description }}
     </ion-card-content>
 
-
     <div class="button-container">
-      <ion-button class="card-button">
-        <ion-icon slot="icon-only" name="bookmark"></ion-icon>
-      </ion-button>
-      
-      <ion-button class = "card-button">
+      <!-- Close Button -->
+      <ion-button (click)="skipRecipe()" class="card-button">
         <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+
+      <!-- Bookmark Button -->
+      <ion-button (click)="bookmarkRecipe()" class="card-button">
+        <ion-icon slot="icon-only" name="bookmark"></ion-icon>
       </ion-button>
     </div>
   </ion-card>
