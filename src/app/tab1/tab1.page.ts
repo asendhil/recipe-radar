@@ -9,6 +9,7 @@ export class Tab1Page {
 
   constructor() {}
   currentRecipeIndex: number = 0; // Start at the first recipe
+  saved: { name: string; subtitle: string; img: string; description: string; }[] = [];
   recipes = [
     {
       name: 'Spaghetti Bolognese',
@@ -38,7 +39,15 @@ export class Tab1Page {
   // Bookmark the current recipe and move to the next one
   bookmarkRecipe() {
     // Here, you'd typically add a bookmark action, such as saving to a database or local storage
+    const existingRecipe = this.saved.find(recipe => recipe.name === this.recipes[this.currentRecipeIndex].name);
+
+  if (existingRecipe) {
+    console.log('Recipe already saved');
+  } else {
+    // Add the current recipe to the saved array
+    this.saved.push(this.recipes[this.currentRecipeIndex]);
     console.log('Bookmarked:', this.recipes[this.currentRecipeIndex].name);
+  }
     this.nextRecipe();
   }
 
