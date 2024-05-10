@@ -2,8 +2,12 @@ ion-card {
     --background: #FA9512;
     --color: #000;
     margin-bottom: 10%;
-    max-width: 400px;
+    max-width: 80%;
     border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40%;
+    
   }
 
 .centered-content {  // Flexbox on ion-content for centering
