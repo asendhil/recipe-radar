@@ -1,17 +1,22 @@
+<!-- tab2.page.html -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Saved Recipes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content class="centered-content">
+  <!-- Iterate over saved recipes and display cards -->
+  <ion-card *ngFor="let recipe of recipeService.savedRecipes">
+    <img [src]="recipe.img" alt="Recipe image"/>
+    <ion-card-header>
+      <ion-card-title>{{ recipe.name }}</ion-card-title>
+      <ion-card-subtitle>{{ recipe.subtitle }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ recipe.description }}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

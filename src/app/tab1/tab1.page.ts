@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-tab1',
@@ -6,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
-  constructor() {}
-  currentRecipeIndex: number = 0; // Start at the first recipe
   saved: { name: string; subtitle: string; img: string; description: string; }[] = [];
+  constructor(private recipeService: RecipeService) {
+  }
+  currentRecipeIndex: number = 0; // Start at the first recipe
   recipes = [
     {
       name: 'Spaghetti Bolognese',
@@ -36,22 +37,18 @@ export class Tab1Page {
     this.currentRecipeIndex = (this.currentRecipeIndex + 1) % this.recipes.length;
   }
 
-  // Bookmark the current recipe and move to the next one
   bookmarkRecipe() {
-    // Here, you'd typically add a bookmark action, such as saving to a database or local storage
-    const existingRecipe = this.saved.find(recipe => recipe.name === this.recipes[this.currentRecipeIndex].name);
-
-  if (existingRecipe) {
-    console.log('Recipe already saved');
-  } else {
-    // Add the current recipe to the saved array
-    this.saved.push(this.recipes[this.currentRecipeIndex]);
-    console.log('Bookmarked:', this.recipes[this.currentRecipeIndex].name);
-  }
+    const currentRecipe = this.recipes[this.currentRecipeIndex];
+    const isAlreadySaved = this.recipeService.savedRecipes.some(recipe => recipe.name === currentRecipe.name);
+    if (!isAlreadySaved) {
+      this.recipeService.savedRecipes.push(currentRecipe);
+      console.log('Bookmarked:', currentRecipe.name);
+    } else {
+      console.log('Recipe already saved');
+    }
     this.nextRecipe();
   }
 
-  // Skip the current recipe and move to the next one
   skipRecipe() {
     this.nextRecipe();
   }
