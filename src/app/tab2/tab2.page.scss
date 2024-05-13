@@ -1,0 +1,47 @@
+ion-card {
+    --background: #ffffff;
+    --color: #000;
+    max-width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-top: 5px solid #FA9512;  
+}
+  
+ion-card-title {
+    --color: #000;
+  }
+  
+ion-card-subtitle {
+    --color: #000;
+  }
+
+.button-container {
+    display: flex;        // Enable flex layout
+    justify-content: center; // Center horizontally
+    margin-top: 10px;     // Add space from content
+}
+
+ion-button {
+    --color: #ffffff;      // Button icon and text color
+    --background: #FA9512;  // Default button background
+}
+
+.card-button{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+
+ion-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 10px 0 0; // Apply border radius only to the top corners
+  }
+
+.expand-button{
+    margin-bottom: 5%;
+    margin-left: 5%;
+}

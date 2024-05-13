@@ -10,13 +10,15 @@
 <ion-content class="centered-content">
   <!-- Iterate over saved recipes and display cards -->
   <ion-card *ngFor="let recipe of recipeService.savedRecipes">
-    <img [src]="recipe.img" alt="Recipe image"/>
-    <ion-card-header>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png"/>    <ion-card-header>
       <ion-card-title>{{ recipe.name }}</ion-card-title>
       <ion-card-subtitle>{{ recipe.subtitle }}</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       {{ recipe.description }}
     </ion-card-content>
+    <ion-button class="expand-button">
+      <ion-icon slot="icon-only" name="caret-down"></ion-icon>
+    </ion-button>
   </ion-card>
 </ion-content>
