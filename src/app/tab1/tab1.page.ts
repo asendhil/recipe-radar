@@ -52,4 +52,10 @@ export class Tab1Page {
   skipRecipe() {
     this.nextRecipe();
   }
+
+  ngOnInit() {
+    this.recipeService.getRecipe().subscribe(res => {
+      console.log(res);
+    });
+  }
 }
