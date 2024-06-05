@@ -17,6 +17,7 @@ export class Tab3Page {
       this.pantryItems.push(this.newItem);
       this.newItem = '';
     }
+    console.log("added to pantryItems:", this.pantryItems);
   }
 
   async editItem(index: number) {
@@ -54,5 +55,6 @@ export class Tab3Page {
 
   deleteItem(index: number) {
     this.pantryItems.splice(index, 1);
+    console.log("deleted something", this.pantryItems);
   }
 }
