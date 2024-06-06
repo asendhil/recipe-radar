@@ -1,15 +1,26 @@
-export const recipes = [
+export interface Recipe {
+  name: string;
+  subtitle: string;
+  img: string;
+  description: string;
+  ingredients: string[];
+  nutrition: string[];
+  directions: string[];
+  expanded: boolean;
+}
+
+export const recipes: Recipe[] = [
     {
       name: 'Spaghetti Bolognese',
       subtitle: 'Time taken: 30min',
       img: 'https://www.recipetineats.com/wp-content/uploads/2018/07/Spaghetti-Bolognese.jpg',
       description: 'A classic Italian pasta dish with a rich tomato sauce.',
-      ingredients: ['1 1/2 tbsp olive oil', '2 garlic cloves , minced','1 onion , finely chopped (brown, yellow or white)',
-      '1 lb / 500g beef mince (ground beef) OR half pork, half beef', '1/2 cup (125 ml) dry red wine (sub water or beef broth/stock)',
-      '2 beef bouillon cubes , crumbled OR granulated beef bouillon (Note 2)',
-      '800g / 28 oz can crushed tomato (or tomato passata)', '2 tbsp tomato paste', '2 tsp white sugar , if needed (Note 3)',
-      '2 tsp Worcestershire sauce', '2 dried bay leaves', '2 sprigs fresh thyme (or 1/2 tsp dried thyme or oregano)', 'Salt and pepper'],
-      nutrition: ['Serving:396g','Calories:510cal','Carbohydrates:53.2g','Protein:40.9g','Fat:12.6g','Fiber:2.7g','Sugar:8.4g'],
+      ingredients: ['1 1/2 tbsp olive oil', '2 garlic cloves , minced','1 onion , finely chopped',
+      '1 lb / 500g beef mince', '1/2 cup (125 ml) dry red wine',
+      '2 beef bouillon cubes',
+      '800g / 28 oz can crushed tomato', '2 tbsp tomato paste', '2 tsp white sugar',
+      '2 tsp Worcestershire sauce', '2 dried bay leaves', '2 sprigs fresh thyme', 'Salt and pepper'],
+      nutrition: ['Serving: 396g','Calories: 510cal','Carbohydrates: 53.2g','Protein: 40.9g','Fat: 12.6g','Fiber: 2.7g','Sugar: 8.4g'],
       directions:['Heat oil in a large pot or deep skillet over medium high heat. Add onion and garlic, cook for 3 minutes or until light golden and softened.',
       'Turn heat up to high and add beef. Cook, breaking it up as your go, until browned.',
       'Add red wine. Bring to simmer and cook for 1 minute, scraping the bottom of the pot, until the alcohol smell is gone.',
@@ -164,7 +175,6 @@ export const recipes = [
       ,
       expanded: false
     },
-
-
-  
   ];
+
+export const pantryItems: string[] = [];

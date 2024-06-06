@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { recipes } from 'src/assets/data/recipes';
+import { pantryItems } from 'src/assets/data/recipes';
+
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',

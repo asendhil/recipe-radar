@@ -1,4 +1,3 @@
-<!-- tab2.page.html -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -24,19 +23,19 @@
 
     <!-- Expanded content section -->
     <div *ngIf="recipe.expanded" class="expanded-content">
-        <h2>Ingredients</h2>
+      <h2>Ingredients</h2>
       <ul>
         <li *ngFor="let ingredient of recipe.ingredients"><ion-checkbox labelPlacement="end">{{ ingredient }}</ion-checkbox></li>
       </ul>
-        <h2>Directions</h2>
+      <h2>Directions</h2>
       <ol>
         <li *ngFor="let direction of recipe.directions">{{ direction }}</li>
       </ol>
-        <h2>Nutritional Facts</h2>
+      <h2>Nutritional Facts</h2>
       <ul>
         <li *ngFor="let fact of recipe.nutrition">{{ fact }} </li>
       </ul>
-      <ion-button (click)="toggleExpand(recipe)">
+      <ion-button (click)="toggleExpand(recipe)" class="collapse-button">
         <ion-icon slot="icon-only" name="caret-up"></ion-icon>
       </ion-button>
     </div>

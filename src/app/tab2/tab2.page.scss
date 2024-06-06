@@ -9,47 +9,47 @@ ion-card {
     overflow: hidden;
     border-top: 5px solid #FA9512; 
     word-wrap: break-word; // Ensure words wrap within the card 
-}
+  }
   
-ion-card-title, ion-card-subtitle, ion-card-content {
+  ion-card-title, ion-card-subtitle, ion-card-content {
     --color: #000;
     white-space: pre-wrap; // Allow text to wrap and go to the next line
-}
-
-.button-container {
+  }
+  
+  .button-container {
     display: flex;        // Enable flex layout
     justify-content: center; // Center horizontally
     margin-top: 10px;     // Add space from content
-}
-
-ion-button {
+  }
+  
+  ion-button {
     --color: #ffffff;      // Button icon and text color
     --background: #FA9512;  // Default button background
-}
-
-.card-button{
+  }
+  
+  .card-button {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 20px;
-}
-
-ion-card img {
+  }
+  
+  ion-card img {
     width: 100%;         
     height: auto;        
     border-radius: 10px 10px 0 0; 
     object-fit: cover;   
     max-height: 200px;
-}
-
-.expand-button{
+  }
+  
+  .expand-button {
     margin-bottom: 5%;
     margin-left: 5%;
     display: block;
     margin: 10px auto 5%;
     max-width: 20px;
-}
-
-.expanded-content {
+  }
+  
+  .expanded-content {
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -57,32 +57,35 @@ ion-card img {
     right: 0;
     bottom: 0;
     z-index: 9999;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 20px;
-}
-
-.expanded-content h2 {
+    box-sizing: border-box; // Ensure padding doesn't cause overflow
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .expanded-content h2 {
     margin-top: 20px;
-}
-
-.expanded-content ul, .expanded-content ol {
+  }
+  
+  .expanded-content ul, .expanded-content ol {
     padding-left: 20px;
-}
-
-.expanded-content ion-button {
+    margin-right: 20px; // Ensure no horizontal overflow
+  }
+  
+  .expanded-content ion-button.collapse-button {
     --background: #FA9512;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-ion-checkbox {
+    margin-top: auto; // Push the button to the bottom without overlapping
+    align-self: center; // Center the button horizontally
+  }
+  
+  ion-checkbox {
     --size: 16px;
-}
-
-ion-checkbox::part(container) {
+  }
+  
+  ion-checkbox::part(container) {
     border: 1px solid #000;
-    fill: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255); // Set the fill color to white
     --checkbox-background-checked: #f38e28;
-}
+  }
+  

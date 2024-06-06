@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RecipeService } from '../recipe.service';
 import { recipes } from 'src/assets/data/recipes';
+import { pantryItems } from 'src/assets/data/recipes';
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -8,11 +10,12 @@ import { recipes } from 'src/assets/data/recipes';
 })
 export class Tab1Page {
   recipes = recipes;
+  filteredRecipes = [];
   saved: { name: string; subtitle: string; img: string; description: string; ingredients: string[], nutrition: string[], directions: string[], expanded: boolean }[] = [];
-  constructor(private recipeService: RecipeService) {
-  }
-  currentRecipeIndex: number = 0; // Start at the first recipe
   
+  constructor(private recipeService: RecipeService) {}
+
+  currentRecipeIndex: number = 0; // Start at the first recipe
 
   // Move to the next recipe in the list
   nextRecipe() {

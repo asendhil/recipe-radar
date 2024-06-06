@@ -9,8 +9,7 @@
 <ion-content class="centered-content">
   <!-- Display the current recipe -->
   <ion-card *ngIf="recipes.length > 0">
-    <img alt="recipe image" src="{{recipes[currentRecipeIndex].img}}"/>    
-    <ion-card-header>
+    <img alt="recipe image" src="{{recipes[currentRecipeIndex].img}}"/>    <ion-card-header>
       <ion-card-title>{{ recipes[currentRecipeIndex].name }}</ion-card-title>
       <ion-card-subtitle>{{ recipes[currentRecipeIndex].subtitle }}</ion-card-subtitle>
     </ion-card-header>
