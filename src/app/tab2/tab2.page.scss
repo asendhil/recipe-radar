@@ -7,16 +7,14 @@ ion-card {
     margin-right: 10%; 
     margin-bottom: 20px;
     overflow: hidden;
-    border-top: 5px solid #FA9512;  
+    border-top: 5px solid #FA9512; 
+    word-wrap: break-word; // Ensure words wrap within the card 
 }
   
-ion-card-title {
+ion-card-title, ion-card-subtitle, ion-card-content {
     --color: #000;
-  }
-  
-ion-card-subtitle {
-    --color: #000;
-  }
+    white-space: pre-wrap; // Allow text to wrap and go to the next line
+}
 
 .button-container {
     display: flex;        // Enable flex layout
@@ -46,6 +44,9 @@ ion-card img {
 .expand-button{
     margin-bottom: 5%;
     margin-left: 5%;
+    display: block;
+    margin: 10px auto 5%;
+    max-width: 20px;
 }
 
 .expanded-content {
@@ -74,4 +75,14 @@ ion-card img {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+ion-checkbox {
+    --size: 16px;
+}
+
+ion-checkbox::part(container) {
+    border: 1px solid #000;
+    fill: rgb(255, 255, 255);
+    --checkbox-background-checked: #f38e28;
 }

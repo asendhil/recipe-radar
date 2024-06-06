@@ -26,7 +26,7 @@
     <div *ngIf="recipe.expanded" class="expanded-content">
         <h2>Ingredients</h2>
       <ul>
-        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+        <li *ngFor="let ingredient of recipe.ingredients"><ion-checkbox labelPlacement="end">{{ ingredient }}</ion-checkbox></li>
       </ul>
         <h2>Directions</h2>
       <ol>
