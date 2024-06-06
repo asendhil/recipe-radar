@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RecipeService } from '../recipe.service';
+import { recipes } from 'src/assets/data/recipes';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,11 @@ import { RecipeService } from '../recipe.service';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  recipes = recipes;
   constructor(public recipeService: RecipeService) {}
+
+  toggleExpand(recipe) {
+    recipe.expanded = !recipe.expanded;
+  }
 
 }

@@ -36,12 +36,42 @@ ion-button {
 }
 
 ion-card img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px 10px 0 0; // Apply border radius only to the top corners
-  }
+    width: 100%;         
+    height: auto;        
+    border-radius: 10px 10px 0 0; 
+    object-fit: cover;   
+    max-height: 200px;
+}
 
 .expand-button{
     margin-bottom: 5%;
     margin-left: 5%;
+}
+
+.expanded-content {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.expanded-content h2 {
+    margin-top: 20px;
+}
+
+.expanded-content ul, .expanded-content ol {
+    padding-left: 20px;
+}
+
+.expanded-content ion-button {
+    --background: #FA9512;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }

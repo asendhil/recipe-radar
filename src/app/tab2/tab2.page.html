@@ -10,7 +10,8 @@
 <ion-content class="centered-content">
   <!-- Iterate over saved recipes and display cards -->
   <ion-card *ngFor="let recipe of recipeService.savedRecipes">
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png"/>    <ion-card-header>
+    <img alt="recipe image" src="{{recipe.img}}"/>    
+    <ion-card-header>
       <ion-card-title>{{ recipe.name }}</ion-card-title>
       <ion-card-subtitle>{{ recipe.subtitle }}</ion-card-subtitle>
     </ion-card-header>
@@ -20,5 +21,24 @@
     <ion-button class="expand-button">
       <ion-icon slot="icon-only" name="caret-down"></ion-icon>
     </ion-button>
+
+    <!-- Expanded content section -->
+    <div *ngIf="recipe.expanded" class="expanded-content">
+        <h2>Ingredients</h2>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+      </ul>
+        <h2>Nutrition</h2>
+      <ul>
+        <li *ngFor="let item of recipe.nutrition">{{ item }}</li>
+      </ul>
+        <h2>Directions</h2>
+      <ol>
+        <li *ngFor="let direction of recipe.directions">{{ direction }}</li>
+      </ol>
+      <ion-button (click)="toggleExpand(recipe)">
+        <ion-icon slot="icon-only" name="caret-up"></ion-icon>
+      </ion-button>
+    </div>
   </ion-card>
 </ion-content>

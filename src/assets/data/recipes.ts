@@ -15,7 +15,8 @@ export const recipes = [
       'Add red wine. Bring to simmer and cook for 1 minute, scraping the bottom of the pot, until the alcohol smell is gone.',
       'Add remaining ingredients except salt and pepper. Stir, bring to a simmer then turn down to medium so it bubbles gently. Cook for 20 – 30 minutes (no lid), adding water if the sauce gets too thick for your taste. Stir occasionally.',
       'Slow simmer option: really takes this to another level, if you have the time! Add 3/4 cup of water, cover with lid and simmer on very low for 2 – 2.5 hours, stirring every 30 minutes or so. (Note 5) Uncover, simmer 20 minutes to thicken sauce. (Note 6 for slow cooker)',
-      'Adjust salt and pepper to taste right at the end. Serve over spaghetti – though if you have the time, I recommend tossing the sauce and pasta per steps below.']
+      'Adjust salt and pepper to taste right at the end. Serve over spaghetti – though if you have the time, I recommend tossing the sauce and pasta per steps below.'],
+      expanded: false
     },
     {
       name: 'Grilled Chicken',
@@ -29,7 +30,10 @@ export const recipes = [
       'Mix all of the ingredients except for the chicken together in a 1-gallon zip-lock bag (go ahead and use the same one you used for pounding if it is still in good shape). Add the chicken breasts to the bag and massage the marinade into the meat until evenly coated. Seal the bag and place in a bowl in the refrigerator (the bowl protects against leakage); let the chicken marinate for at least 4 hours or overnight.',
       'Preheat the grill to high heat and oil the grates. Place the chicken breasts on the grill and cook, covered, for 2 to 3 minutes per side. Do not overcook. Transfer the chicken to a platter and serve.',
       'Note: The nutritional information includes all of the ingredients for the marinade, so one serving is likely significantly lower in calories and fat than the numbers below.']
-    },
+      ,
+      expanded: false
+    }
+    ,
     {
       name: 'Vegetable Stir Fry',
       subtitle: 'Time taken: 20min',
@@ -42,6 +46,8 @@ export const recipes = [
       directions:['Add 1 tablespoon olive oil over medium-high heat in a wok or large skillet. Add bell pepper, peas, carrots, mushrooms, broccoli, baby corn, and water chestnuts. Sauté 2-3 minutes until veggies are almost tender.',
       'In a small whisk together soy sauce, garlic, brown sugar, sesame oil, chicken broth, and cornstarch.',
       'Pour over veggies and cook until the sauce has thickened. Garnish with chopped green onions and sesame seeds if desired']
+      ,
+      expanded: false
     },
     {
       name: 'Denver Omelet Salad',
@@ -53,6 +59,8 @@ export const recipes = [
       nutrition: ['229 calories', '14g fat (3g saturated fat)', '217mg cholesterol', '756mg sodium', '7g carbohydrate (3g sugars, 2g fiber)', '20g protein'],
       directions:['Arrange spinach and tomatoes on a platter; set aside. In a large skillet, heat 1 tablespoon olive oil over medium-high heat. Add ham, onion and green pepper; saute until ham is heated through and vegetables are tender, 5-7 minutes. Spoon over spinach and tomatoes.',
       'In the same skillet, heat remaining olive oil over medium heat. Break eggs, 1 at a time, into a small cup, then gently slide into the skillet. Immediately reduce heat to low; season with salt and pepper. To prepare sunny-side up eggs, cover pan and cook until whites are completely set and yolks thicken but are not hard. Top salad with fried eggs.']
+      ,
+      expanded: false
     },
     {
       name: 'Breakfast Quesadillas',
@@ -66,6 +74,8 @@ export const recipes = [
       'To cook the quesadilla: In a separate, large skillet, warm the tortilla over medium heat, flipping occasionally. Once the pan and tortilla are warm, sprinkle one-half of the cheese over one-half of the tortilla. Top the cheese with scrambled eggs, then top the scrambled eggs with the remaining cheese.',
       'Press the empty tortilla halve over the toppings. Let the quesadilla cook until golden and crispy on the bottom (don’t stop cooking too soon!), about 1 to 2 minutes, reducing the heat if necessary to prevent burning the tortilla. Flip it and cook until the second side is golden and crispy.',
       'Immediately remove the skillet from the heat and transfer the quesadilla to a cutting board. Let it cool for a few minutes to give it time to set, then slice each quesadilla into 2 slices with a very sharp knife. Serve immediately, with your favorite salsa and/or hot sauce on the side.']
+      ,
+      expanded: false
     },
     {
       name: 'Sweet and Spicy Turkey Sandwich',
@@ -77,6 +87,8 @@ export const recipes = [
       directions: ['Combine crumbled chorizo and chipotle peppers in adobo sauce in a bowl.',
       'Heat a skillet over medium-high heat; add chorizo mixture and cook until crisp, 5 to 7 minutes. Transfer to a plate, reserving grease in the skillet.',
       'Heat tortillas in reserved grease in the skillet over medium heat until warmed, 1 to 2 minutes per side. Stack 2 tortillas for each taco, then fill with chorizo, onion, and cilantro.']
+      ,
+      expanded: false
     },
     {
       name: 'Easy Chorizo Street Tacos',
@@ -88,6 +100,8 @@ export const recipes = [
       directions: [ 'Combine crumbled chorizo and chipotle peppers in adobo sauce in a bowl.',
       'Heat a skillet over medium-high heat; add chorizo mixture and cook until crisp, 5 to 7 minutes. Transfer to a plate, reserving grease in the skillet.',
       'Heat tortillas in reserved grease in the skillet over medium heat until warmed, 1 to 2 minutes per side. Stack 2 tortillas for each taco, then fill with chorizo, onion, and cilantro.']
+      ,
+      expanded: false
     },
     {
       name: 'Lemon Garlic Butter Salmon',
@@ -106,6 +120,8 @@ export const recipes = [
       'Remove baking sheet from the oven and remove the top piece of foil or open up the packet so salmon is exposed but keep the edges raised to contain the buttery mixture.',
       'Spoon the reserved buttery mixture over the salmon, if desired. Use your judgment and if there’s already lots of juice you don’t need to add it because you don’t want it to start leaking. If you have extra buttery mixture, it’s great served over the finished dish.',
       'Optionally garnish salmon with parsley and serve immediately']
+      ,
+      expanded: false
     },
     {
       name: 'Avocado Chicken Bowl',
@@ -120,6 +136,8 @@ export const recipes = [
       'Rinse and drain the black beans, the olives (watch out for salt content!), chop lettuce, arugula and cilantro.',
       'Arrange the bowls with some greens at the bottom, olives, beans, chicken, broccoli and sauces on top.', 
       'Serve!']
+      ,
+      expanded: false
     },
     {
       name: 'Rise and Shine Parfait',
@@ -130,6 +148,8 @@ export const recipes = [
       nutrition: ['259 calories', '3g fat (0 saturated fat)', '7mg cholesterol', '6mg sodium', '48g carbohydrate (27g sugars, 7g fiber)', '13g protein'],
       directions: ['Layer half the yogurt, peaches, blackberries and granola into 4 parfait glasses.', 
       'Repeat layers.']
+      ,
+      expanded: false
     },
     {
       name: 'No-bake Cereal Bars',
@@ -141,6 +161,8 @@ export const recipes = [
       directions: [ 'Prep the ingredients: Add the cereal into a large mixing bowl. Next, add the maple syrup and almond butter into a microwave-safe bowl and microwave it for 20 seconds, or until the peanut butter has melted.',
       'Make the bars: Add the syrup and almond butter mixture to the mixing bowl with cereal and mix until combined.',
       'Set, slice, and serve: Transfer the cereal bar mixture to a lined pan and refrigerate it for 30 minutes or until it has firmed up. Once firm, slice them into bars.']
+      ,
+      expanded: false
     },
 
 

@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class RecipeService {
-  savedRecipes: { name: string; subtitle: string; img: string; description: string; }[] = [];
+  savedRecipes: { name: string; subtitle: string; img: string; description: string; expnaded: boolean; }[] = [];
   constructor(private http: HttpClient) { }
 
   getRecipe(): Observable<any> { //always ensure recipe has instructions & include nutrition facts
