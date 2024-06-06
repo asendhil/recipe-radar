@@ -28,14 +28,14 @@
       <ul>
         <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
       </ul>
-        <h2>Nutrition</h2>
-      <ul>
-        <li *ngFor="let item of recipe.nutrition">{{ item }}</li>
-      </ul>
         <h2>Directions</h2>
       <ol>
         <li *ngFor="let direction of recipe.directions">{{ direction }}</li>
       </ol>
+        <h2>Nutritional Facts</h2>
+      <ul>
+        <li *ngFor="let fact of recipe.nutrition">{{ fact }} </li>
+      </ul>
       <ion-button (click)="toggleExpand(recipe)">
         <ion-icon slot="icon-only" name="caret-up"></ion-icon>
       </ion-button>
