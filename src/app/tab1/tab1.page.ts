@@ -8,7 +8,7 @@ import { recipes } from 'src/assets/data/recipes';
 })
 export class Tab1Page {
   recipes = recipes;
-  saved: { name: string; subtitle: string; img: string; description: string; }[] = [];
+  saved: { name: string; subtitle: string; img: string; description: string; ingredients: string[], nutrition: string[], directions: string[], expanded: boolean }[] = [];
   constructor(private recipeService: RecipeService) {
   }
   currentRecipeIndex: number = 0; // Start at the first recipe

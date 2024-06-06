@@ -11,7 +11,7 @@ export class Tab2Page {
   recipes = recipes;
   constructor(public recipeService: RecipeService) {}
 
-  toggleExpand(recipe) {
+  toggleExpand(recipe: any) {
     recipe.expanded = !recipe.expanded;
   }
 

@@ -18,7 +18,7 @@
     <ion-card-content>
       {{ recipe.description }}
     </ion-card-content>
-    <ion-button class="expand-button">
+    <ion-button class="expand-button" (click)="toggleExpand(recipe)">
       <ion-icon slot="icon-only" name="caret-down"></ion-icon>
     </ion-button>
 
