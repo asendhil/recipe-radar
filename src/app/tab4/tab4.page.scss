@@ -1,0 +1,23 @@
+ion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  ion-label {
+    margin-left: 0;
+    margin-right: 8px;  // Adjust this value if needed
+  }
+  
+  ion-checkbox {
+    --background: #f0f0f0; /* Background color of the checkbox */
+    --checkmark-color: #ffffff; /* Color of the checkmark */
+    --checkbox-background-checked: #f39b1f;
+  }
+
+  ion-checkbox::part(container) {
+    border-radius: 5px;
+    border: 2px solid #f7f4f0;
+  }
+  
+  
