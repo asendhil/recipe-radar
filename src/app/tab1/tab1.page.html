@@ -3,6 +3,9 @@
     <ion-title>
       Browse Recipes
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-img src="../../assets/Images/recipe-radar-logo.png" class="logo"></ion-img>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -15,8 +18,10 @@
     </ion-card-header>
 
     <ion-card-content>
-      {{ recipes[currentRecipeIndex].description }}
+      <div class="recipe-label">{{recipes[currentRecipeIndex].label}}</div>
+      <div class="recipe-description">{{ recipes[currentRecipeIndex].description }}</div>
     </ion-card-content>
+
 
     <div class="button-container">
       <!-- Close Button -->

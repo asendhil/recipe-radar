@@ -51,3 +51,22 @@ ion-header{
   --ion-toolbar-background: #ffffff;	
   text-decoration-color: #FA9512;
 }
+
+.logo {
+  height: 30px; 
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+.recipe-label {
+  background-color: rgb(252, 204, 92);
+  color: black;
+  padding: 2px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.recipe-description {
+  display: block; /* Ensures the description starts on a new line */
+}

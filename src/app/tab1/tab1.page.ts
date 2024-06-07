@@ -15,7 +15,7 @@ export class Tab1Page {
   
   constructor(private recipeService: RecipeService) {}
 
-  currentRecipeIndex: number = 0; // Start at the first recipe
+  currentRecipeIndex: number = Math.round(Math.random()*10); // Start at the first recipe
 
   // Move to the next recipe in the list
   nextRecipe() {
