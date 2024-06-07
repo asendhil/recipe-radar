@@ -5,6 +5,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-text>Update your pantry here!</ion-text>
+  </ion-item>
   <ion-list>
     <ion-item *ngFor="let item of pantryItems; let i = index">
       <ion-label>{{ item }}</ion-label>
@@ -19,9 +22,6 @@
     </ion-item>
   </ion-list>
 
-  <ion-item>
-    <ion-text>Update your pantry here!</ion-text>
-  </ion-item>
 
   <ion-item>
     <ion-input [(ngModel)]="newItem" placeholder="Add new item"></ion-input>
