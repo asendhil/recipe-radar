@@ -15,8 +15,8 @@
     <ion-item *ngFor="let item of pantryItems; let i = index">
       <ion-label>{{ item }}</ion-label>
       <ion-buttons slot="end">
-        <ion-button (click)="editItem(i)">
-          <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+        <ion-button color="black" (click)="editItem(i)">
+          <ion-icon slot="icon-only" color="orange" name="create-outline"></ion-icon>
         </ion-button>
         <ion-button color="danger" (click)="deleteItem(i)">
           <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
