@@ -1,5 +1,5 @@
 ion-button {
-    --color: #ffffff;      // Button icon and text color
+    --color: #000000;      // Button icon and text color
     --background: #FA9512;  // Default button background
 }
 
@@ -7,3 +7,18 @@ ion-icon {
     --color: #FA9512;      // Button icon and text color
     --background: none;  // Default button background
 }
+
+ion-content {
+    --ion-background-color: #f7dbad; /* Set background color to white */
+  }
+  
+  ion-toolbar{
+    --ion-toolbar-background: #ffffff;	
+    text-decoration-color: #FA9512;
+  }
+
+  ion-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }

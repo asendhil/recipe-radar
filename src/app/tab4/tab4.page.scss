@@ -12,22 +12,43 @@
 
   ion-checkbox::part(container) {
     border-radius: 3px;
-    border: 2px solid #f7f4f0;
+    border: 2px solid #e0880d;
   }
+
+  ion-button {
+    --color: #000000;      // Button icon and text color
+    --background: #FA9512;  // Default button background
+}
 
   ion-content {
     ion-list {
       display: grid;
       grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-      gap: 10px; /* Space between the items */
       padding: 10px;
     }
     
     ion-item {
       display: flex;
       align-items: center;
-      padding: 8px;
     }
   }
+
+  ion-content {
+    --ion-background-color: #f7dbad; /* Set background color to white */
+  }
   
+  ion-header{
+    --ion-toolbar-background: #ffffff;	
+    text-decoration-color: #FA9512;
+  }
+  
+  ion-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+ .page-heading{
+    margin-left: 30px;
+    padding-bottom: -5px;
+ }
   

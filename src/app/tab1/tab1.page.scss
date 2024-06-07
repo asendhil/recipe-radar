@@ -6,7 +6,7 @@ ion-card {
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%; 
-    margin-top: 50%;   
+    margin-top: 30%;   
     overflow: hidden;
   }
   
@@ -41,4 +41,13 @@ ion-card img {
   border-radius: 10px 10px 0 0; 
   object-fit: cover;   
   max-height: 200px;
+}
+
+ion-content {
+  --ion-background-color: #f7dbad; /* Set background color to white */
+}
+
+ion-header{
+  --ion-toolbar-background: #ffffff;	
+  text-decoration-color: #FA9512;
 }

@@ -88,4 +88,11 @@ ion-card {
     fill: rgb(255, 255, 255); // Set the fill color to white
     --checkbox-background-checked: #f38e28;
   }
+  ion-content {
+    --ion-background-color: #f7dbad; /* Set background color to white */
+  }
   
+  ion-header{
+    --ion-toolbar-background: #ffffff;	
+    text-decoration-color: #FA9512;
+  }
